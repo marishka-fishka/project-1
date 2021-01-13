@@ -12,57 +12,66 @@
 <body>
     <header class="header"> 
         <div class="header-top">
-            <nav>
-                <ul>
-                    <li> <a href="">Shop</li>
-                    <li> <a href="">Home</li>
-                    <li> <a href="">Story</li>
-                    <li> <a href="">About</li>
-                    <li> <a href="">Blog</li>
-                    <li> <a href="">Testimonials</li>
-                </ul>
-            </nav>   
-            <div class="logo">
-                <a href="">
-                    <img src="" alt="">
-                </a>
-            </div>
-            <div class="personal">
-                <ul>
-                    <li>
-                        <a href=''><img src='' alt =''> </a>
-                    </li>
-                    <li>
-                        <a href =''><img src='' alt = ''> </a>
-                    </li>
-                    <li>
-                        <a href =''><img src='' alt = ''> </a>
-                        <span>3</span>   
-                    </li>
-                </ul>
-            </div>
-            <div class='social'>
-                <ul>
-                    <li>
-                        <a href=''><img src='' alt=''></a>
-                    </li>
-                    <li>
-                        <a href=''><img src='' alt=''></a>
-                        ></a:href>
-                    </li>
-                    <li>
-                        <a href=''><img src='' alt=''></a>
-                    </li>
-                </ul>
+            <div clas="header__top-inner">                                                   
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"> <a class="menu__link" href="">Shop</li>
+                        <li class="menu__item"> <a class="menu__link" href="">Home</li>
+                        <li class="menu__item"> <a class="menu__link" href="">Story</li>
+                        <li class="menu__item"> <a class="menu__link" href="">About</li>
+                        <li class="menu__item"> <a class="menu__link" href="">Blog</li>
+                        <li class="menu__item"> <a class="menu__link" href="">Testimonials</li>
+                    </ul>
+                </nav>   
+                <div class="logo">
+                    <a class="logo-link" href="">
+                        <img class="logo__img" src="" alt="">
+                    </a>
+                </div>
+                <div class="personal">
+                    <ul class="personal__list">
+                        <li class ="personal__list-item">
+                            <a class="personal__link" href=''><img class="personal_icon-search" src='' alt =''> </a>
+                        </li>
+                        <li class ="personal__list-item">
+                            <a class="personal__link" href =''><img class="personal_icon-user" src='' alt = ''> </a>
+                        </li>
+                        <li class ="personal__list-item">
+                            <a class="personal__link-cart" href =''><img class="personal_cart-icon" src='' alt = ''> 
+                            <span class="personal__cart-count">3</span>   
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class='social'>
+                    <ul class="social__list">
+                        <li class="social__list-item">
+                            <a class = "social__link" href=''><img class="social__icon" src='' alt=''></a>
+                        </li>
+                        <li class="social__list-item">
+                            <a class = "social__link" href=''><img class="social__icon" src='' alt=''></a>
+                            ></a:href>
+                        </li>
+                        <li class="social__list-item">
+                            <a class = "social__link" href=''><img class="social__icon" src='' alt=''></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="header-content">
-            <button>Shop now</button>
+            <div class="header__content-inner">
+                <div class="header__btn-wrapper">
+                    <button class="btn btn--green-bg">Shop now
+                        <img class="arrow--yellow" src="" alt="">
+                    </button>
+                </div>
+            </div>
         </div>
     </header> 
     <section class="smoothies">
-        <div class="about-smoothies">
-            <article>
+        <div class="smoothies__text">
+            <article class="smoothies__description">
             <h1>Facts about smoothies</h1>
             <h2>What are these smoothies?</h2>
                A smoothie is a drink made from pureed raw fruit, vegetables, 
@@ -72,7 +81,7 @@
              whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements. 
             </article>
         </div>
-        <div class="type-smoothies">
+        <div class="smoothies__type">
             <table>
                 <tr>
                     <td><img src='' alt=''>Plant based</td>
@@ -184,8 +193,8 @@
     </section>
     <footer>   
         <div class="footer-top">
-            <div class="logo-text">
-                <a href="">
+            <div class="logo">
+                <a class="logo-link" href="">
                     <img src="" alt="">
                 </a>
             </div>
