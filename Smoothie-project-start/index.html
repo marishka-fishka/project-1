@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Сюда подключаем стили -->
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./reset.css">
     <title> Document</title>
 </head>
 
 <body>
     <header class="header"> 
         <div class="header-top">
-            <div clas="header__top-inner">                                                   
+            <div clas="header__top-inner">                                            
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item"> <a class="menu__link" href="">Shop</li>
@@ -22,7 +23,7 @@
                         <li class="menu__item"> <a class="menu__link" href="">Blog</li>
                         <li class="menu__item"> <a class="menu__link" href="">Testimonials</li>
                     </ul>
-                </nav>   
+                </nav>                 
                 <div class="logo">
                     <a class="logo-link" href="">
                         <img class="logo__img" src="assets/images/Logo-img.png" alt="">
@@ -34,7 +35,7 @@
                             <a class="personal__link" href=''><img class="personal_icon-search" src="assets/images/Search-icon.png" alt =''> </a>
                         </li>
                         <li class ="personal__list-item">
-                            <a class="personal__link" href =''><img class="personal_icon-user" src="assets/images/p-icon-top.png" alt = ''> </a>
+                            <a class="personal__link" href =''><img class="personal_icon-user" src="assets/images/User-icon.png" alt = ''> </a>
                         </li>
                         <li class ="personal__list-item">
                             <a class="personal__link-cart" href =''><img class="personal_cart-icon" src="assets/images/Cart-icon.png" alt = ''> 
@@ -50,10 +51,10 @@
                         </li>
                         <li class="social__list-item">
                             <a class = "social__link" href=''><img class="social__icon" src="assets/images/p-icon-top.png" alt=''></a>
-                            ></a:href>
+                            
                         </li>
                         <li class="social__list-item">
-                            <a class = "social__link" href=''><img class="social__icon" src="assets/images/Instagram.png" alt=''></a>
+                            <a class = "social__link" href=''><img class="social__icon" src="assets/images/insta-icon.png" alt=''></a>
                         </li>
                     </ul>
                 </div>
@@ -72,8 +73,8 @@
     <section class="smoothies">
         <div class="smoothies__text">
             <article class="smoothies__description">
-            <h1>Facts about smoothies</h1>
-            <h2>What are these smoothies?</h2>
+                 <h1 >Facts about smoothies</h1>
+                 <h2>What are these smoothies?</h2>
                A smoothie is a drink made from pureed raw fruit, vegetables, 
              and sometimes dairy products (milk, yogurt, ice-cream or cottage cheese),
              typically using a blender. Smoothies may be made using other ingredients, 
@@ -101,6 +102,7 @@
     <section class="about">
         <div class="about__picture">
             <img src="assets/images/smoothie-pic.png" alt="">
+        <div class = "about__description">
             <h2>What makes Smoothie an <span class="text--yellow">awesome drink?</span> </h2>
             <ul class="about__list">
                 <li class="about__list-item"><b>Crunchy </b>Puffs Texture</li>
@@ -113,27 +115,28 @@
                 <li class="about__list-item"><b>Corn-Free & Soy-Free</b></li>
             </ul>
             <div class="about__button">
-                <button class="btn btn--green-bg" id= "aboutSmoothie">About organic smoothie <img class="arrow--yellow" src="assets/images/Arrow.png" alt=""></button>
+                <button class="btn btn--yellow-border" id= "aboutSmoothie">About organic smoothie <img class="arrow--yellow" src="assets/images/Arrow.png" alt=""></button>
             </div>
+        </div>
         </div>
     </section>
     <section class="products">
-        <div class="products__type">
-            <h5><b>Dark Chocolate Smoothie</b> 100 ml</h5>
-            <img class="products__img-type"src="assets/images/choc.-smoth.png" alt=""> <button class="products__btn--brown">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
+        <div class="inner type--brown">
+            <h5><strong>Dark Chocolate Smoothie</strong> 100 ml</h5>
+            <img class="products__img-type"src="assets/images/choc.-smoth.png" alt=""> <button class="btn btn--small">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
         </div>
-        <div class="products__type">
-            <h5><b>Vegan Lettuce Smoothie</b> 100 ml</h5>
-            <img class="products__img-type" src="assets/images/vegan-smoth.png" alt=""><button class="products__btn--green">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
+        <div class="inner type--green">
+            <h5><strong>Vegan Lettuce Smoothie</strong> 100 ml</h5>
+            <img class="products__img-type" src="assets/images/vegan-smoth.png" alt=""><button class="btn btn--small">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
         </div>
-        <div class="products__type">
-            <h5><b>Lemon Ginger Smoothie</b>100 ml</h5>
-            <img class="products__img-type" src="assets/images/lemon-smoth.png" alt=""><button class="products__btn--yellow">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
+        <div class="inner type--yellow">
+            <h5><strong>Lemon Ginger Smoothie</strong>100 ml</h5>
+            <img class="products__img-type" src="assets/images/lemon-smoth.png" alt=""><button class="btn btn--small">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
         </div>
-        <div class="products__type">
-            <h5><b>Turmeric Garlic Smoothie</b>
+        <div class="inner type--orange">
+            <h5><strong>Turmeric Garlic Smoothie</strong>
             100 ml</h5>
-            <img class="products__img-type" src="assets/images/turmeric-smoth.png" alt=""><button class="products__btn--orange">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
+            <img class="products__img-type" src="assets/images/turmeric-smoth.png" alt=""><button class="btn btn--small">Buy<img class="arrow--right" src="assets/images/Arrow.png" alt=""></button>
         </div>
     </section>
 
@@ -148,7 +151,7 @@
             <img class="story__picture--desc"src="assets/images/story-stamp.png" alt="">   
             <img class="story__picture--img"src="assets/images/story-img.png" alt="">   
         </div>
-            <button class="btn btn--green-bg" id= "we-are"> Who we are <img class="arrow--yellow" src="assets/images/Arrow.png" alt=""></button>
+            <button class="btn btn--no-border" id= "we-are"> Who we are <img class="arrow--yellow" src="assets/images/Arrow.png" alt=""></button>
     </section>
     <section class="testimonials">
             <h1>Why clients <span class="text--brown">LOVE </span> us?</h1>
@@ -174,13 +177,13 @@
                 <time>Jun 16, 2020</time>
                 <p>If the fruit ingredients and the green vegetable ingredients are both juiced ahead of time,
                     the mixed juice doesn't even have to be blended like a smoothie, i.e. a green juice or anything...
-                    <b>Read More</b> <a href ="#" class="next">&raquo;</a> </p>
+                    <strong>Read More</strong> <a href ="#" class="next">&raquo;</a> </p>
             </article>
         </div>
            
     </section>
     <section class="instagram">
-        <a class="instagram__link"><img class="instagram__link-icon" src="assets/images/insta-icon.png" alt="">ashasuperfoods</a>
+        <a class="instagram__link"><img class="instagram__icon" src="assets/images/insta-icon.png" alt="">ashasuperfoods</a>
     
         <div class="instagram__pictures">
             <img class="instagram__pictures-adv" src="assets/images/insta-img1.png" alt="">
@@ -237,8 +240,6 @@
             </div>
 
         </div>
-
-
 
         <div class="footer-botton">
             <span class="copyright-text">© 2020. All Rights Reserved.  </span>

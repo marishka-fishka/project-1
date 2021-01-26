@@ -1,3 +1,168 @@
+body{
+    font-family: Muli;
+}
+h1{
+    color:#f7ae3b;
+    font-size: 50 px;
+}
+h2 {
+    color: #f7ae3b;
+    font-size: 50 px;
+  }
+h3{
+
+}
+h5{
+      font-size: 24 px;
+      color:#ffffff
+  }
+
+
 .header{
     background-image: url(assets/images/main-img.png);
+    width: 1920px;
+    height: 1080px;
 }
+.header-top-inner{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .logo{
+        
+    }
+    .personal{
+        display: flex;
+    }
+    .social{
+        display: flex;
+    }
+
+.smoothies{
+    background-color: #ffffff; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.about{
+    height: 800 px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: 18866d;
+}
+    .text--yellow {
+        color:#cae941;
+        text-align: center;
+        font-size: 55 px;
+        font-weight: ExtraBold;
+}
+
+.products{
+  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .inner {
+        width: 480px;
+        height: 720 px;
+        text-align: center;
+        
+    }
+    .type--brown{
+        background-color: #652815;
+    }
+    .type--green{
+        background-color:#158a70;
+    }
+    .type--yellow{
+    background-color:#fab03c;
+    }
+    .type--orange{
+        background-color:#c34b19;
+    }
+.story{
+    background-color:#ffffff;
+}
+.testimonials{
+    background-color:#643018;
+}
+.blog{
+    background-color:#ffffff;
+
+}
+.instagram{
+
+}
+    .instagram__pictures{
+        display:flex;
+        flex-direction: row;
+        
+    }
+    .instagram__pictures-adv {
+        width: 384 px;
+        height: 384 px;
+    }
+
+.footer-top{
+    background-color:#f9af3c;
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-botton{
+    background-color:#692c20;
+    height: 60px;
+}
+
+.btn {
+    font-family: Muli;
+    font-weight: ExtraBold Italic; 
+    text-align: center; 
+   
+}
+.btn--green-bg{
+        width: 280 px;
+        height: 70 px;
+        border-radius: 35px;
+        font-size: 18 px;
+        letter-spacing: -20;
+        color: #0aa566;
+    }
+.btn--yellow-border {
+        width:380 px;
+        height: 60 px;
+        border-radius: 30 px;
+        font-size: 21 px;
+        letter-spacing: 0;
+        color:#167e74; 
+    }
+.btn--small{
+        width: 204 px;
+        height: 60 px;
+        border-radius: 30 px;
+        border-color: #ffffff;
+        
+    }
+.btn--no-border{
+        width: 301 px ;
+        height: 60 px;
+        border-radius: 30 px;
+        border-color: #ffffff;
+        background-color:#0aa566;      
+     }
+
+
+
+
+
