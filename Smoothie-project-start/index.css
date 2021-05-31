@@ -9,7 +9,8 @@ h1{
 }
 h2 {
     color: #f7ae3b;
-    font-size: 50 px;
+    font-size: 40 px;
+    /* font-size: 50 px; */
   }
 h3{
 
@@ -124,6 +125,7 @@ h5{
     
 }
 .about{
+    width: 1920px;
     height: 800px;
     display: flex;
     flex-direction: row;
@@ -131,25 +133,37 @@ h5{
     background-color: #18866d;   
 }
     .about__description{
-        display:flex;
-        flex-direction: column;
+        /* display:flex;
+        align-self:center; */
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
         margin-top: 100px;
         margin-right: 350px;
+        margin-bottom: 100px;
         
     }
     .about__picture{
         margin-top: 70px;
-        margin-left: 135px;
+        /* margin-left: 135px; */
+    }
+    .about__list{
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
     .about__list-item{
-        line-height: 22px;
+        line-height: 1.5em;
+        font-size: 21px;
+        color: #ffffff;
+    }
+    .about__header-descr{
+        font: 55px;
+        color:#ffffff;
     }
     .text--yellow {
         color:#cae941;
         text-align: center;
-        font-size: 55 px;
-        font-weight: ExtraBold;
-}
+        font-size: 55px;
+        font-weight: ExtraBold;}
 
 .products{
     height: 720px;
@@ -181,14 +195,50 @@ h5{
         background-color:#c34b19;
     }
 .story{
+    height: 900px;
     background-color:#ffffff;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; */
+    position:relative;
+   
+}
+.story__text{
+    width:520px;
+    position:absolute;
+    left: 300px;
+    top: 120px;
+    font-size: 18px;
+    line-height: 35px;
+   
+}
+.story__picture{
+    position:absolute;
+    top:60px;
+    right: 310px;
+
 }
 .testimonials{
+    height: 720px;
     background-color:#643018;
+    position: relative;
 }
+.text--brown{
+    color:#f2612d;
+    font-size: 50px;
+}
+.testimonials__dots-img{
+    position: absolute;
+    top:-60px;
+    right: 50px;
+}
+.q{}
+.testimonials__avatar{
+position:absolute;
+right: 600px;
+top: 290px;
+}
+
 .blog{
     background-color:#ffffff;
     margin: 90px 360px 40px 360px;
@@ -221,6 +271,9 @@ h5{
     background-color:#692c20;
     height: 60px;
 }
+    .copyright-text{
+        text-align: center;
+    }
 
 .btn {
     font-family: Muli;
@@ -259,6 +312,8 @@ h5{
         width: 204px;
         height: 60px;
         border-radius: 30px;
+        background-color: transparent;
+        color:white;
         border-color: #ffffff;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
@@ -276,6 +331,8 @@ h5{
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
+        
+        
 }
 .arrow--yellow{
     align: right;
