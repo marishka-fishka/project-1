@@ -241,12 +241,33 @@ top: 290px;
 
 .blog{
     background-color:#ffffff;
-    margin: 90px 360px 40px 360px;
+    /* margin: 90px 360px 40px 360px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 870px;
+    position: relative;
 
 }
     .blog__img{
-        width: 555 px;
-        height: 400 px;
+        /* width: 555px;
+        height: 400px; */
+        position: absolute;
+        top:200px;
+        left:360px;
+    }
+    .blog__text{
+        width: 650px;
+        height: 250px;
+        margin-top: 360px;
+        
+    }
+    .instagram__link{
+     display: flex;
+     justify-content: center;
+     margin-bottom: 50px;
+     color:#0aa566;
+     font-size: 40px;
     }
 .instagram{
 
