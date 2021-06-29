@@ -121,9 +121,16 @@ h5{
 }
 .smoothies__text{
     display: flex;
- 
-    
 }
+.smoothies__type-data{
+    width: 1000px;
+    display:flex;
+    flex-direction: row;
+    
+    justify-content:space-between ;
+
+}   
+
 .about{
     width: 1920px;
     height: 800px;
@@ -144,6 +151,7 @@ h5{
     }
     .about__picture{
         margin-top: 70px;
+        z-index:3;
         /* margin-left: 135px; */
     }
     .about__list{
@@ -216,12 +224,30 @@ h5{
     position:absolute;
     top:60px;
     right: 310px;
-
+    /* display: block; */
 }
+.story__picture--img{
+    display: block;
+}
+.story__picture--img::before {
+    content: "";
+    background-image: url(https://images.theconversation.com/files/223729/original/file-20180619-126566-1jxjod2.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=1200.0&fit=crop);
+    /* background-image: url(assets/images/story-stamp.png); */
+    width:100px;
+    height: 100px;
+    border: 1px solid;
+    /* background-size: cover; */
+
+    
+}
+
 .testimonials{
     height: 720px;
     background-color:#643018;
     position: relative;
+    display:flex;
+    
+    align-items:center;
 }
 .text--brown{
     color:#f2612d;
@@ -260,7 +286,32 @@ top: 290px;
         width: 650px;
         height: 250px;
         margin-top: 360px;
-        
+        line-height: 35px;
+        display: block;
+    }
+    .blog__text::before{
+
+        background-image:url(assets/images/block-line.png)
+    }
+    .blog__text--header{
+        color:#f2612d;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .blog__text--time{
+        font-size: 16px;
+        line-height: 35px;
+    }
+    .blog__text--description{
+        padding-left: 60px;
+        padding-top: 25px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+    .blog__name{
+        padding-top: 75px;
+        padding-left: 120px;
+        font-size: 50px;
     }
     .instagram__link{
      display: flex;
