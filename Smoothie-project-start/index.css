@@ -5,105 +5,84 @@ body{
 }
 h1{
     color:#f7ae3b;
-    font-size: 55 px;
+    font-size: 50px;
+    line-height: 40px;
 }
 h2 {
     color: #f7ae3b;
     font-size: 40 px;
-    /* font-size: 50 px; */
-  }
-h3{
-
 }
-h5{
-      font-size: 24px;
-      color:#ffffff
-  }
-
-
+h3 {
+    color:#f7ae3b;
+    font-size: 50px;
+    line-height: 40px;
+}
+h4 {
+    font-size: 26px;
+    line-height: 40px;
+    color:#ffffff;
+}
+h5 {
+    color: #ffffff;
+    font-size:24px;
+    line-height:22px;
+}
+.btn{
+    color:#ffffff;
+}
+.btn--green-backgr{
+    font-size: 24px;
+    line-height: 40px;
+    background-color:#0aa566;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    width: 280px;
+    height: 70px;
+    color:#ffffff;
+    
+}
 .header{
     background-image: url(assets/images/main-img.png);
     width: 1920px;
     height: 1080px;
 }
-.header__top-inner{
+.header__top{
     height: 190px;
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-   
 
 }
-    .user__personal{
-        
+.header__list{ 
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.header__list-link{
+        font-size: 16px;
+        color:#ffffff;
+}
+.personal__list{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
-    
-    .social__link{
-        /* background-image: url(assets/images/faceb-icontop.png);
-        background-size: 50% auto; */
-    }
-
-    
-    .menu__list{
-        display: flex;
-        flex-direction: row;
-        color:white;
-          
-    }
-    .menu__item{
-        padding: 10px ;
-        
-    }
-    .menu__link{
-        color: white;
-        text-decoration: none;
-    }
-    .logo{  
-    }
-    .user__info{
-        width: 450px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
-    }
-    .user__personal{
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .personal__list{
-        display: flex; 
-        
-    }
-    .personal__list-item{
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .social{
-        display: flex;
-    }
-    .social__list{
-        display: flex;
-        flex-direction: row;   
-    }
-    .social__list-item{
-        padding-left: 15px;
-        padding-right: 15px; 
-    }
-    .header-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;    
-    }
-    .header__btn-wrapper{
-        
+        width: 170px;
+}
+.header__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 125px;
     }
 
 .smoothies{
