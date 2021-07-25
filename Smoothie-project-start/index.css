@@ -76,6 +76,7 @@ body{
     height: 60px;
     font-size: 21px;
     line-height: 22px;
+    margin-top: 90px;
 }
 .btn--yellow-border{
     border: 2px solid #f5b132;
@@ -106,7 +107,24 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+}
+.btn--left{
+    
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+.header__personal{
+    position: relative;
+}
+.header__personal::after{
+    content:url(assets/images/-top.png);
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    right: -145px;
 }
 .header__list{ 
     width: 550px;
@@ -117,6 +135,9 @@ body{
 .header__list-link{
         font-size: 16px;
         color:#ffffff;
+}
+.header__social-list, .personal__list{
+    padding: 0;
 }
 .personal__list{
         display: flex;
@@ -183,21 +204,30 @@ body{
 
 }
 .smoothies__about{
+display: block;
 width: 915px;
-margin-top:50px;
-margin-bottom: 60px;
+margin-top: 110px;
+
 text-indent: 20px;
 }
 .smoothies__type{
     width: 1000px;
+    
     display: flex;
+    /* flex: 1 1 0px;
+    */
     flex-direction: row;  
     flex-wrap: wrap;
     align-content: center;
     column-gap: 50px;
+    row-gap: 100px;
+    
 
 }   
 .smoothies__img{
+    /* width: 25%;
+    border-right:1px solid black;
+    border-bottom:1px solid black; */
 
 }
 .smoothies__name{
@@ -206,8 +236,8 @@ text-indent: 20px;
     line-height: 40px;
 }
 .about{
-    /* width: 1920px;
-    height: 800px; */
+    /* width: 1920px; */
+    height: 800px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -268,8 +298,14 @@ text-indent: 20px;
     flex-direction: column;
     justify-content: center;
     align-items:center;
+    padding-top: 55px;
 
-}   
+}  
+.product__volume{
+    display: block;
+    margin-top: 15px;
+
+} 
 .wrap--brown{
     background-color:#632c14;
     }
@@ -321,7 +357,7 @@ text-indent: 20px;
    
 }
 .story__title{
-    padding-top: 260px;
+    padding-top: 210px;
     padding-left: 310px;
 }
 .story__picture{
@@ -396,7 +432,15 @@ position:absolute;
 right: 600px;
 top: 290px;
 }
-
+.testimonials__buttons{
+display: flex;
+justify-content: center;
+align-items:center;
+padding-top: 180px;
+}
+.testimonials__arrow{
+    padding-top: 130px;
+}
 .blog{
     height: 870px;
     position: relative; 
@@ -415,6 +459,12 @@ top: 290px;
         position: absolute;
         top:200px;
         left:360px;
+    }
+    .blog__img::after{
+     content: url(assets/images/block-line.png);
+     display: block;
+     
+
     }
     
     .blog__subtitle{
