@@ -15,30 +15,38 @@ button {
     border: none;
     background-color: transparent;
 }
-body{
-    font-family: 'Muli-ExtraBold';
-    src: url(assets/fonts/Muli-Bold.woff);
-    src: url(assets/fonts/Muli-ExtraBold.woff);
-    color: #fff; 
-    
+@font-face {
+    font-family: 'MuliExtraBold';
+    src: url("./fonts/Muli-ExtraBold.woff") format ("woff");
+    font-family: "Muli-Bold";
+    src:url("./fonts/MuliBold.woff") format ("woff");
+    font-family: "Muli-Regular";
+    src: url("./fonts/MuliRegular.woff") format ("woff");
+    font-family: "Muli-ExtraBoldItalic";
+    src: url("./fonts/MuliExtraBoldItalic.woff") format ("woff");
 
+}
+body{
+  
+    color: #fff; 
+    font-family: 'MuliBold', sans-serif;
     
 }
-/* @import url(assets/fonts/Muli-ExtraBold.woff);
-@import url(assets/fonts/Muli-Regular.woff); */
+
 .title{
     color:#f7ae3b;
     font-size: 50px;
-    line-height: 40px;    
+    line-height: 40px;   
+    font-family: 'MuliExtraBold', sans-serif ; 
 }   
-.smoothies__header, .about__header{
+.about__header{
     font-size: 40px;
 }
 .text{
     font-size: 18px;
     line-height: 35px;
     color:black;
-    font-family: Muli-Regular;
+    font-family: 'MuliBold', sans-serif;
 }
 .footer__header, .footer__payment, .footer__follow {
     font-size: 26px;
@@ -50,7 +58,8 @@ body{
     line-height:22px;
 }
 .btn{
-    color:#ffffff;    
+    color:#ffffff;
+    font-family: 'MuliExtraBold', sans-serif;    
 }
 .btn--green-backgr{
     font-size: 24px;
@@ -135,6 +144,7 @@ body{
 .header__list-link{
         font-size: 16px;
         color:#ffffff;
+        
 }
 .header__social-list, .personal__list{
     padding: 0;
@@ -204,10 +214,7 @@ body{
 
 }
 .smoothies__about{
-display: block;
 width: 915px;
-margin-top: 110px;
-
 text-indent: 20px;
 }
 .smoothies__type{
@@ -224,19 +231,16 @@ text-indent: 20px;
     
 
 }   
-.smoothies__img{
-    /* width: 25%;
-    border-right:1px solid black;
-    border-bottom:1px solid black; */
 
-}
 .smoothies__name{
     color: #f2612d;
     font-size: 25px;
     line-height: 40px;
 }
+.smoothies__description{
+    padding-top: 58px;
+}
 .about{
-    /* width: 1920px; */
     height: 800px;
     display: flex;
     flex-direction: row;
@@ -244,42 +248,47 @@ text-indent: 20px;
     background-color: #18866d;   
 }
     .about__description{
-        margin-top: 100px;
-        width: 590px;
-        /* padding-right: 350px;
-        padding-bottom: 100px;  */
-      
+        margin-top: 50px;
+        width: calc(100%/2);  
     }
     .about__header{
+        display: block;
+        margin-right: 290px;
         font-size: 55px;
         line-height: 60px;
         color:#ffffff;
     }
     .about__title-bold{
         color:#cae941;
+        position: relative;
     }
-
-    .about__picture{
-        padding-top: 70px;
-        z-index:3;
+    .about__title-bold::after{
+        content:url(assets/images/line.png);
+        display: block;
+        position: absolute;
+        bottom: -17px;
+        right: 5px;
         
+    }
+    .about__picture{
+        padding-top: 60px;
+        padding-left: 90px;
+        z-index:3;   
     }
     .about__list{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        
+        /* padding-bottom: 35px;
+        padding-left: 0;
+        margin:0; */
     }
     .about__item{
-        font-family: Muli-ExtraBold;
-        line-height: 1.5em;
+        font-family: 'MuliRegular', sans-serif;
+        line-height: 2;
         font-size: 21px;
         color: #ffffff;
     }
     .about__item-bold{
-        font-family: Muli-Regular;
-        font-size: 21px;
-        /* font-weight: bold; */
-        
+        font-family: 'MuliExtraBold', sans-serif;
+        font-size: 21px;  
     }
     .about__img{
         padding-right:20px;
@@ -290,7 +299,6 @@ text-indent: 20px;
     display:flex;
     flex-direction: row;
     
-  
 }
 .product__wrap{
     width: calc(100%/3);
@@ -298,12 +306,18 @@ text-indent: 20px;
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    padding-top: 55px;
+    
+
 
 }  
+.product__img{
+   
+}
 .product__volume{
     display: block;
     margin-top: 15px;
+    font-family: "Muli-ExtraBoldItalic", sans-serif;
+    text-align: center;
 
 } 
 .wrap--brown{
@@ -321,9 +335,7 @@ text-indent: 20px;
 .product__header{
     font-size: 24px;
 }  
-.product__img{
-    
-}
+
 .product__btn {
 
 
@@ -359,27 +371,31 @@ text-indent: 20px;
 .story__title{
     padding-top: 210px;
     padding-left: 310px;
+   
 }
 .story__picture{
     position:absolute;
     top:60px;
     right: 310px;
+    
   
     
 }
 .story__picture--img{
-   
+    position: relative; 
 }
-.story__picture::before {
-    content: "";
-    background-image: url(assets/images/story-stamp.png); 
+.story__title::after {
+    content: url(assets/images/story-stamp.png);
+    position: absolute;
+    left:845px;
+    top:85px;
     /* padding-right: 600px;
     padding-top: 100px; */
     /* width:100px;
     height: 100px; */
-    border: 1px solid;
-    background-size: cover;
-    z-index:5;
+    /* border: 1px solid;
+    background-size: cover; */
+    z-index:3;
 
 }
 .story__btn{
@@ -405,6 +421,13 @@ text-indent: 20px;
 .testimonials__title{
     padding-top: 120px;
     padding-left: 700px;
+    position: relative;
+}
+.testimonials__title::after{
+    content:url(assets/images/Dots.png);
+    position: absolute;
+    right:40px;
+    top:-80px;
 }
 .testimonials__phrase{
     width: 450px;
@@ -439,7 +462,7 @@ align-items:center;
 padding-top: 180px;
 }
 .testimonials__arrow{
-    padding-top: 130px;
+    
 }
 .blog{
     height: 870px;
@@ -459,11 +482,13 @@ padding-top: 180px;
         position: absolute;
         top:200px;
         left:360px;
+        z-index: 4;
     }
-    .blog__img::after{
+    .blog__subtitle::before{
      content: url(assets/images/block-line.png);
-     display: block;
-     
+     position: absolute;
+     top:-50px;
+     left:-60px;
 
     }
     
@@ -471,14 +496,13 @@ padding-top: 180px;
         color:#f2612d;
         font-size: 30px;
         line-height: 40px;
+        position:relative;
 
     }
     .blog__time{
         font-size: 16px;
         color:#000000;
         line-height: 35px;
-        
-        padding-left: ;
         
 
     }
@@ -503,12 +527,21 @@ padding-top: 180px;
 .instagram{
 
 }
-    .instagram__pictures{
+.instagram__pictures{
         width: (100%/5);
         display:flex;
-        
-        
+          
     }
+.instagram__photo{
+    position:relative;  
+}
+.instagram__photo::after{
+    content:url(assets/images/Instagram.png);
+    position:absolute;
+    bottom: 30px;
+    right: 20px;
+
+}
 .footer__logo{
     width: 250px;
 }
